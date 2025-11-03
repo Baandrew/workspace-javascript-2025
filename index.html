@@ -464,7 +464,17 @@
                 <img src="img/usca5.jpg" alt="usca">
             </div>
             <script>
-
+                var index = 3;
+                var imageList = document.queryselectorALL(".img-container-hide");
+                imageList[0].setAttribute("class", "img-container-show");
+                // event handler
+                function changepic() {
+                    imageList[index].setAttribute("class", "img-container-hide");
+                    index ++;
+                    index = index % imageList.length;
+                }
+                    
+                
             </script>
 
 
